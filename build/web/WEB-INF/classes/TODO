@@ -1,0 +1,44 @@
+TODOS
+
+-area amministratore con grafici avvanzati                                   
+
+
+
+
+
+Problemi:
+
+
+
+
+Problematice:
+                                                                                  
+-un una fattura scarica effettivamente da magazzino 
+-da un drain è possibile generare un ddt o una fattura
+-da un ddt è possibile generare una fattura
+-io propongo una soluzione aggiungere un campo nella fattura e nel ddt chiamato id drain 
+- poi nello scarico ci aggiungiamo un campo chiamato approved[true,false] in questa maniera una fattura genera
+ uno scarico approved=true un ddt invece uno scarico approved=false poi se unoo genera la fattura dal ddt 
+allora lo scarico del ddt
+ che è uguale al id_drain della fattura diventa approved=true
+
+-drain non ha id_supply ma id_product poi verifica la quantità presente se si scarica un prodotto la cui            MESSO id_product
+quantità cioè tutti i supply - tutti i drain per quel prodotto , è minore di quanto si sta cercando di scaricare    TODO: controllo su quantità
+allora si fa un avviso all'utente se l'utente vuole scaricare lo stesso allora ok se no no .
+
+
+Soluzioni cloud:
+Aruba 
+Large 2 core E5-2650L v4 4 GB RAM 80 SSD 12,50 euro/mese
+
+OVH
+2 vCore 2,4 GHz 8 GB RAM SSD 40 GB 11,99+IVA
+1 vCore 2,4 GHz 6 GB RAM 25 GB  7,99+IVA
+2 vCore 2,4 GHz 12 GB RAM 50 GB 16,99+IVA
+
+
+
+BUG trovati 
+- quando genera una fattura da un ddt la mette come pagata 
+
+
